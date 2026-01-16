@@ -1,0 +1,25 @@
+{
+  "name": "@e-rezept/api",
+  "version": "0.1.0",
+  "description": "E-Rezept FHIR REST API server",
+  "type": "module",
+  "main": "./dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@e-rezept/fhir-types": "workspace:*",
+    "@e-rezept/fhir-server": "workspace:*",
+    "fastify": "^4.29.0",
+    "@fastify/cors": "^9.0.0",
+    "pino-pretty": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

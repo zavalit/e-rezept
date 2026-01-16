@@ -1,0 +1,27 @@
+{
+  "name": "e-rezept-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "E-Rezept Demo Portal - German e-Health demonstration project",
+  "keywords": [
+    "e-rezept",
+    "fhir",
+    "hl7",
+    "healthcare",
+    "germany",
+    "gematik"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm --filter @e-rezept/api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r exec rm -rf dist node_modules"
+  }
+}
